@@ -69,13 +69,13 @@ public:
         std::cout << "after applying prims algorithim... " << std::endl;
 
 
-        // array that shows what vertex another vertex is connected to
+        // array that shows what vertex another vertex is connected to (changed to vector so no deleting needed)
         std::vector<int> parent(numVertices);
 
-        // array that holds the minimum distance to connect
+        // array that holds the minimum distance to connect (changed to vector)
         std::vector<int> MinDistance(numVertices);;
 
-        // makes heap
+        // makes heap https://www.youtube.com/watch?v=XWEEmITavdc (used for making structure but tweaked it so it uses the three arrays we were given)
         MinHeap minheap(numVertices);
         for (int i = 0; i < numVertices; i++) {
             parent[i] = -1;

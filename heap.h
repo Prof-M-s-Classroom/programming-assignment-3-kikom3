@@ -38,7 +38,7 @@ public:
         delete[] keyArray;
 
     };
-    void insert(int vertex, int key) {
+    void insert(int vertex, int key) { // https://www.youtube.com/watch?v=5l3n3HFgljg&t=233s helped with understanding but tweaked for multiple arrays given
         // if size is bigger than capacity, cannot insert anything else so return
         if (size >= capacity) {
             return;
@@ -51,9 +51,6 @@ public:
             position[vertex] = size;
             keyArray[vertex] = key;
 
-
-
-
             // maintain heap after insertion
             minHeapify(size);
 
@@ -65,7 +62,7 @@ public:
         }
     };
 
-    int extractMin() {
+    int extractMin() { // https://www.youtube.com/watch?v=AHyXBIxC63g&t=1629s helped with structure, made so it uses arrays given
         // checks if empty heap
         if (size == 0) {
 
@@ -94,7 +91,7 @@ public:
     }
 
     // maintaining heap structure (updating in minheap)
-    void decreaseKey(int vertex, int newKey) {
+    void decreaseKey(int vertex, int newKey) { // https://www.youtube.com/watch?v=aK5Qj29C5PQ helped with structure
         int idx = position[vertex];
 
         keyArray[vertex] = newKey;
@@ -142,7 +139,7 @@ private:
     int size;
 
     // still need to finish
-    void minHeapify(int idx) {
+    void minHeapify(int idx) { // https://www.youtube.com/watch?v=AHyXBIxC63g&t=1629s helped with structure and understanding
 
         // make index smallest or the root
         int root = idx;
