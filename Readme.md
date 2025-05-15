@@ -5,7 +5,7 @@
 David Soriano
 
 ## Description
-What the program does is given vertices and edges between them, it utilizes prim's algorithim to be able to find the shortest path that hits all the verticies while also being able to get the lowest cost
+What the program does is given vertices and edges between them, it utilizes prim's algorithim to be able to find the shortest path that hits all the vertices while also being able to get the lowest cost
 
 
 ## Files

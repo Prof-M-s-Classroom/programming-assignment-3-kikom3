@@ -11,7 +11,7 @@ public:
         this->capacity = capacity;
         size = 0;
 
-        // make arrays based off of capacitu given
+        // make arrays based off of capacity given
         heapArray = new int[capacity];
         position = new int[capacity];
         keyArray = new int[capacity];
@@ -138,7 +138,7 @@ private:
     int capacity;
     int size;
 
-    // still need to finish
+    // still need to finish (finished)
     void minHeapify(int idx) { // https://www.youtube.com/watch?v=AHyXBIxC63g&t=1629s helped with structure and understanding
 
         // make index smallest or the root
@@ -151,7 +151,7 @@ private:
 
         int rightchild = 2 * idx + 2;
 
-        // less than size = in heap and if less than root than it has to be smallest menaing you have to switch
+        // less than size = in heap and if less than root than it has to be smallest meaning you have to switch
         if (leftchild < size && keyArray[heapArray[leftchild]] < keyArray[heapArray[root]]) {
             root = leftchild;
         }
@@ -166,7 +166,7 @@ private:
             // swap if root is not the smallest
             std::swap(heapArray[idx], heapArray[root]);
 
-            // change position arrau to match if root is not the smallest and have to change
+            // change position array to match if root is not the smallest and have to change
             position[heapArray[idx]] = idx;
             position[heapArray[root]] = root;
 

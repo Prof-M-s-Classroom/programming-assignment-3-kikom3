@@ -62,7 +62,7 @@ public:
 
     void primMST() {
 
-
+        std::cout << "Given this adjacent matrix" << std::endl;
         // just trying to see if array will print (printed on one row try new print graph)
         // got done prints the matrix before prims is applied to it
         printGraph();
@@ -106,12 +106,12 @@ public:
         // shows all best connections for each point given then print total weight
         for (int i = 1; i < numVertices; i++) {
             if (parent[i] != -1) {
-                std::cout << parent[i] << " <----> " << i << "   Weight = " << adjMatrix[i][parent[i]] << std::endl;
+                std::cout << parent[i] << " <----> " << i << "   Cost = " << adjMatrix[i][parent[i]] << std::endl;
                 weight += adjMatrix[i][parent[i]];
             }
 
         }
-        std::cout << "Lowest Cost Path is " << weight << std::endl;
+        std::cout << "Lowest Cost Path to get all vertices is " << weight << std::endl;
 
     }
     // Must print MST edges and total weight
