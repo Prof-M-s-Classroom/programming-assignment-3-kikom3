@@ -87,3 +87,13 @@ Input:
 
     // notes of doing test cases
     https://share.goodnotes.com/s/jMqgNiRky2ngSpygc78P6U
+
+Assumptions:
+When it came to decisions and assumptions made, One that I made was that 0 would start as the starting point when it came to the algorithim since you could choose
+
+Test Case Description:
+One example of a test case that I used to verify correctness was the codes that have trial on them, what I did was hand did them with my notes on them being listed here and seeing what paths were best and what the lowest cost path would be to hit every point. I then compared it to what my output got and it matched up perfectly.
+
+Test Plan:
+When it comes to test cases and edge cases I tried, I tried with no edges being in the graph at all and graphs with 6 and 7 vertices included 
+
